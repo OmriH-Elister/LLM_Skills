@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Podcast"
+  short_description: "Turn source text into a two-presenter podcast script and audio."
+  default_prompt: "Convert the provided source text into a two-presenter podcast script, preserve original conversation phrasing when applicable, save the script to a separate file, and render audio with the best available local TTS CLI."
