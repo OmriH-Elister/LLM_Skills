@@ -10,7 +10,8 @@ import requests
 
 DEFAULT_MODEL = "gpt-5.4"
 DEFAULT_ENDPOINT = "https://api.openai.com/v1/responses"
-RENDER_SCRIPT = Path("/home/alistairb/.codex/skills/create-podcast/scripts/render_podcast.py")
+SCRIPT_DIR = Path(__file__).resolve().parent
+RENDER_SCRIPT = SCRIPT_DIR / "render_podcast.py"
 
 
 def parse_args():
