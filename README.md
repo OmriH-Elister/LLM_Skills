@@ -15,6 +15,10 @@ A collection of reusable Codex/LLM skills and helper scripts for common content 
   - `scripts/render_podcast.py`: Rendering/post-processing helper for podcast output.
   - `scripts/install_tts_ubuntu.sh`: Ubuntu setup script for TTS dependencies.
   - `scripts/install_edge_tts_local.sh`: Local Edge TTS setup helper.
+- `psych-profiler/`
+  - `SKILL.md`: Structured personality-profiling skill, adapted from Fabric's `analyze_personality` pattern (see the skill's Attribution section).
+- `sherlock-freud-mind-modeler/`
+  - `SKILL.md`: Depth-psychological (Sherlock/Freud) unconscious pattern analysis skill, expanded from Fabric's `model_as_sherlock_freud` pattern, originally authored and contributed upstream by the maintainer of this repo (see the skill's Attribution section).
 
 ## Getting started
 
