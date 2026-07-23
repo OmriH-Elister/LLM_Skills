@@ -54,24 +54,24 @@ description: Transform user-provided text or text files into a two-presenter pod
 - For a one-command file-to-script-to-audio flow, use:
 
 ```bash
-python3 /home/alistairb/.codex/skills/create-podcast/scripts/create_podcast.py \
+python3 <CODEX_SKILLS_DIR>/create-podcast/scripts/create_podcast.py \
   path/to/input.txt
 ```
 
-- Use `python3 /home/alistairb/.codex/skills/create-podcast/scripts/render_podcast.py <script-path> --output <audio-path>`.
+- Use `python3 <CODEX_SKILLS_DIR>/create-podcast/scripts/render_podcast.py <script-path> --output <audio-path>`.
 - The renderer auto-selects the best supported local CLI in this order:
   `edge-tts` with `ffmpeg`, then `espeak-ng`, then `espeak`.
 - The recommended quality path is a local `edge-tts` install inside the skill:
 
 ```bash
-bash /home/alistairb/.codex/skills/create-podcast/scripts/install_edge_tts_local.sh
+bash <CODEX_SKILLS_DIR>/create-podcast/scripts/install_edge_tts_local.sh
 ```
 
 - That installer sets up a skill-local virtualenv with `edge-tts` and a bundled `ffmpeg`, and the renderer auto-detects both.
 - On Ubuntu, install the recommended local backend with:
 
 ```bash
-bash /home/alistairb/.codex/skills/create-podcast/scripts/install_tts_ubuntu.sh
+bash <CODEX_SKILLS_DIR>/create-podcast/scripts/install_tts_ubuntu.sh
 ```
 
 - If the user specifies voices, pass them with `--voice-a` and `--voice-b`.
@@ -89,14 +89,14 @@ Presenter 1: Next line.
 Generate the podcast script and audio in one step with:
 
 ```bash
-python3 /home/alistairb/.codex/skills/create-podcast/scripts/create_podcast.py \
+python3 <CODEX_SKILLS_DIR>/create-podcast/scripts/create_podcast.py \
   path/to/source.txt
 ```
 
 After writing the script file, render it with:
 
 ```bash
-python3 /home/alistairb/.codex/skills/create-podcast/scripts/render_podcast.py \
+python3 <CODEX_SKILLS_DIR>/create-podcast/scripts/render_podcast.py \
   path/to/output.podcast-script.md \
   --output path/to/output.podcast.wav
 ```
