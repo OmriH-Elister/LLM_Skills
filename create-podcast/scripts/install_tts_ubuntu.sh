@@ -25,4 +25,4 @@ echo
 echo "Installed espeak-ng."
 echo "Verify with: espeak-ng --version"
 echo "Then render audio with:"
-echo "python3 /home/alistairb/.codex/skills/create-podcast/scripts/render_podcast.py <script-path> --output <audio-path>"
+echo "python3 <CODEX_SKILLS_DIR>/create-podcast/scripts/render_podcast.py <script-path> --output <audio-path>"
